@@ -1,0 +1,17 @@
+Quickstart.
+
+Start up Graph and, in the "Function List" window place a the cursor anywhere in one of the text boxes labeled "y="
+
+Type "e^(-(x^2))*cos(10*x)"  in to the box.  (if you want you can just cut and paste this text). After you finish typing press return.  Make sure that the checkbox labeled "Draw" is checked.  If the function is not displayed, check for typos.
+
+Double click anywhere in the graph window to zoom out.
+
+press and hold shift, click and then drag a box the squiggly part near the orgin.  Now release the mouse.  The part of the graph that you drew the box around should now consume the entire window
+
+click and drag the graph with the mouse to center the graph in the window
+
+go to the file menu, choose save.
+
+name the file "wavepacket.bmp" and click save.
+
+There are a few more things you can do.  If you can't figure them out, read README.

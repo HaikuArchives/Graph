@@ -1,0 +1,25 @@
+Graph TODO list
+
+FOR 1.0 FINAL
+squash any bug reports
+add data plotting (scatter plots)
+add coordinate system mapping to allow plotting of any arbitrary coordinate system
+save settings
+possibly others if some users give me good ideas.
+-----
+What else I want to do in no particular order
+
+add a step function and a simple way to graph cylic functions.
+Add the ability to graph sums
+give user feedback on errors in functions
+implement graphs with different thicknesses
+inequalities
+domain and range constraints
+undo/redo
+user preferences and saving user state
+data plotting
+histograms
+save as encapsulated postscript (eps) and postscript (ps)
+
+This one is seperate because at this point it is more of a pipe dream (since I know nothing about 3d)
+3d graphing

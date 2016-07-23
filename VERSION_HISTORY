@@ -1,0 +1,110 @@
+Version History for Graph copyright 2000-2001 by Daniel S Rogers
+**newversion**
+Fixed Bugs:
+	Fixed some stupid bugs assocated with sanity checking the values in the settings window
+
+0.9
+New Features:
+	j( n, x )    (a.k.a. Bessel's first solution)  and y( n , x )   (a.k.a Bessel's second solution) work
+	internals are now much more thread safe
+	added polar and parametric coordinate systems
+	improved mouse handling code
+	probably others, but I can't remember
+Fixed Bugs:
+	Found another bug with the interpreter that caused a seg fault.  It's all fixed now.
+	The color patch now displays the correct color
+	The graph no longer misbehaves if the function is really wiggilly (like sin(1/x)) if you are
+		using parametrics and setting "t step" small
+Known Bugs:
+	None (yay!)
+
+0.8
+New Features:
+	added a zoom box to the Function List
+	included some gui improvments that were sumitted by Stephan Assmus
+	Added a color selection button.  functions can now have different colors
+	Added tick marks.  Set the spacing with x step and y step
+Fixed Bugs:
+	negation now prioritizes correctly.  This, I hope, fixes the last bug with the interpreter.  If you 
+	    have function is still drawing incorrectly, please tell me what they are so I can fix them.
+Known Biugs:
+	The graph starts to misbehave if the function is really wiggilly (like sin(1/x))
+	j( n, x )    (a.k.a. Bessel's first solution)  and y( n , x )   (a.k.a Bessel's second solution) don't work
+	
+ 
+
+0.7
+New Features:
+	redesigned the gui.  I like it better now.
+	The function list is now the way it should be: with a scroll bar and in a seperate window
+	Added the ability to open and close the settings and funtion window, without quitting the app.
+	Added a checkbox to turn off the graphing of an individual function
+	rewrote much code in preperation for different colors, thicknesses, and coordinate systems
+		the result of which was some simplifications and a couple of minor speed ups
+Fixed Bugs:
+	floating windows now behave the way I want them too.
+	The mouse handling code pissed me off! (it's better now)
+Known Bugs:
+	sometimes the save panel disappeares for no apearent reason.  If someone has some insite
+		into this, please let me know.
+	negation doesn't prioritize correctly, If you want to use negation, enclose what you want to
+		negate in parenthses.
+	The graph starts to misbehave if the function is really wiggilly (like if you take sin(x) and make 
+		xMax and xMin really big)
+	j( n, x )    (a.k.a. Bessel's first solution)  and y( n , x )   (a.k.a Bessel's second solution) don't work
+
+
+0.6
+New Features:
+	Added a zoom-in.  Try shift+click and drag the box that you want the new graph to zoom to.
+	Added a zoom-out.  Double click on the graph
+	I am told copying to the clipboard works now with programs that understand native bitmaps
+		I haven't tested it myself (Thank Dario Accornero for that fix)
+	Saving the graph as bitmap works (finally!  again thank Dario Accornero for pointing me in the 
+		right direction)
+Fixed Bugs:
+	Fixed two memory leaks (one was due to Dario, thanks again!)
+Known Bugs:
+	negation doesn't prioritize correctly, If you want to use negation, enclose what you want to
+		negate in parenthses.
+	The graph starts to misbehave if the function is really wiggilly (like if you take sin(x) and make 
+		xMax and xMin really big)
+	j( n, x )    (a.k.a. Bessel's first solution)  and y( n , x )   (a.k.a Bessel's second solution) don't work
+		actually this was in the last version, but I forgot to tell anyone
+
+
+0.5
+New Features:
+	Added the ability to move the graph around with the mouse by clicking on the
+		graph and dragging
+	Added a Menu bar and an about box
+	rewrote DrawGraph().  Redrawing the graph is now about 7-10x faster
+	Completely rewrote Interpreter.cpp, it is now about 7-10x faster
+	Fixed a bug that caused certain classes of functions to crash BeOS (i.e. x^cos(x))
+	Fixed a bug that prevented some functions from drawing (i.e. x^x)
+	Added an offscreen buffer.  Redrawing is very fast now
+Known Bugs:
+	Copying a graph to the clipboard doesn't work and I don't know how to fix it.
+		if you know anything about copying a bitmap to a clipboard, please fix
+		GraphWindow::CopyGraph() and send me the new function to
+		dsrogers@uclink4.berkeley.edu
+
+0.4
+Add the ability to graph multiple functions
+Many bugs fixed
+several bugs added (I think)
+Moved the settings to a seperate window
+Add several functions to the interpreter (abs, j, y, gamma, erf and erfc)
+Added sanity checks to the window bounds.
+Fixed bug that caused Graph to crash if parens were unmatched
+Fixed a bug that caused an empty function to draw a line at y=0.
+Fixed a bug that caused an invalid bug to draw a line at y=0
+
+0.3
+never released
+
+0.2.1
+first release to the general public because of a bug that caused BeOS to crash
+
+0.2
+first release that I prepared for public release

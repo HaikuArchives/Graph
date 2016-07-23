@@ -1,0 +1,103 @@
+Graph, a simple graphing calculator. 
+Copyright (C) 2000-2001  Daniel S Rogers 
+
+This program is free software; you can redistribute it and/or 
+modify it under the terms of the GNU General Public License 
+as published by the Free Software Foundation; either version 2 
+of the License, or (at your option) any later version. 
+
+This program is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+GNU General Public License for more details. 
+
+You should have received a copy of the GNU General Public License 
+along with this program; if not, write to the Free Software 
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA. 
+
+Daniel S Rogers
+dsrogers@uclink4.berkeley.edu
+
+Permanent address:
+12595 Garbo Lane
+Pine Grove, CA 95665
+
+See GPL for the full license
+
+**NEW FOR THIS VERSION**
+parametric and polar graphing
+
+**Warning**
+This doc is getting out of date and is poorly written to start with.
+If someone is willing to write me better docs I would be very happy to include them, until then,
+you will have to wait until I have time to write better docs.
+
+	Graph is a simple program to graph arbitrary functions on a 2D-plane.  Graph works fine and can graph rather complicated functions with ease.  
+	There are three windows in Graph..  The window "Graph" actually displays the graph.  This window is always visible.  If you close this window, Graph will quit.  The other two windows can be shown and hidden using the "Window" menu in Graph.  The window called "Settings" allows you to  set the bounds of the "Graph" window.  The other window called "Function List" is the list of functions that the window "Graph" will display.
+	When you input a function (whether it be parametric, polar, or cartesian) you can use nested parentheses, trig and hyperbolic funtions and a few others.  You can also use order of operations.  If you want you can even throw in a bunch of white space.  Also, keep in mind that your window limits, like x-min, x-max etc, can also be expressions.
+
+Some other things to try:
+	Panning:  Click and drag with the mouse to move the graph around.
+	Zooming:  Double-Click on the "Graph" window to zoom in.  If you hold down shift when you do this, you will zoom out.  Also, if you You can also zoom-in by shift clicking and dragging a box that you want to zoom to.
+	click on "More" and "Less" to add and remove functions from the function list.
+	clicking on the checkbox labeled "Draw" to toggle drawing of individual functions.
+	Save the graph as a bitmap using File->Save.
+	Clicking on the color patch will bring up a color selection window.
+		
+
+***How to input functions***
+Spaces are allowed anywhere.  (all white space will be stripped away internally.)
+You must use pair of parenthses around the argument(s) of a function.
+In the list below, every "x" can be an expression, however, every "n" is an integer.  If you enter an x, where an interger is asked for, zero will be substituted for x.  If you enter a non-integer, it will be truncated.  For example,
+sin(x+1)
+e^(-abs(x))
+sin(3*pi/2)
+
+However, for j(n,x)
+j(0, x)  produces a zero order Bessel function
+j(1.1, x) produces a first order Bessel function (1.1 is truncated to 1)
+j(x,x) produces a zero order Bessel function
+
+
+  
+Currently you can graph any real-valued function of x that uses the following operations and constants:
+
+add
+substact
+multiply
+divide
+e^( x )
+nested parenthses
+sqrt( x )
+sin( x )
+cos( x )
+tan( x )
+asin( x )
+acos( x )
+atan( x )
+ln( x )
+log( x )
+sinh( x )
+cosh( x )
+tanh( x )
+asinh( x )
+acosh( x )
+atanh( x )
+pi
+e
+abs( x )  (i.e. absolute value)
+gamma( x ) 
+erf( x )  (the error function)
+erfc( x ) (the complimentary error function)
+j(n,x) (nth order Bessal function)
+y(n,x) (nth order 2nd Bessel function)
+
+If you have read this far, please send me an email at dsrogers@uclink4.berkeley.edu and tell me what you think of Graph.  Critical comments, compliments, and bug reports are much appreciated.
+
+Contributors:
+Dario Accornero
+Stephen Assmus
+
+
+A Thank You.
+To my girlfriend, for putting up with my obsessiveness.
